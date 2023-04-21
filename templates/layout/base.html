@@ -55,11 +55,12 @@
     {% block 'hero' %} 
     {% endblock %}
 
-      {% include '/layout/elements/header.html' %}
+      {% include 'layout/elements/header.html' %}
 
-  {% block 'main' %} {% endblock %}
+    {% block 'main' %}
+    {% endblock %}
 
-    {% include '/layout/elements/footer.html' %}
+    {% include 'layout/elements/footer.html' %}
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

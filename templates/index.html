@@ -1,11 +1,28 @@
 {% extends 'layout/base.html' %}
 {% load static %}
 
-{% block 'content' %}
 
     {% block 'hero' %} 
-        {% include 'layout/hero.html' %}
+
+<!-- ======= Hero Section ======= -->
+<section id="hero">
+  <div class="hero-container">
+    <div data-aos="fade-in">
+      <div class="hero-logo">
+        <img class="" src="{% static '/img/logo.png' %}" alt="ardu1na">
+      </div>
+
+      <h1>Development Studio</h1>
+      <h2><span class="typed" data-typed-items="soluciones digitales, sitios web dinámicos, software a medida, consultoría en sistemas"></span></h2>
+      <div class="actions">
+        <a href="#services" class="btn-get-started">Servicios</a>
+        <a href="#contact" class="btn-services">Contacto</a>
+      </div>
+    </div>
+  </div>
+</section><!-- End Hero -->
     {% endblock %}
+    
   {% block 'main' %} 
 
   <main id="main">
@@ -199,6 +216,5 @@
         </div>
       </div>
     </section><!-- End Contact Section -->
-    {% endblock %}
 
 {% endblock %}
