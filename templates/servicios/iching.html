@@ -1,0 +1,86 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+
+
+{% block 'main' %} 
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Portfoio Details</h2>
+          <ol>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li>Portfoio Details</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4 py-4">
+
+          <div class="col-lg-2 mx-3">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="{% static '/img/portfolio/portfolio-details-4.png' %}" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{% static '/img/portfolio/portfolio-details-5.png' %}" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{% static '/img/portfolio/portfolio-details-7.png' %}" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{% static '/img/portfolio/portfolio-details-6.png' %}" alt="">
+                </div>
+
+                
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <div class="portfolio-info py-4">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Web App </li>
+                <li><strong>Personal Project</strong>: I Ching Libre</li>
+                <li><strong>Project date</strong>: 20 Octubre, 2022</li>
+                <li><strong>Project URL</strong>: <a href="https://iching.pythonanywhere.com">iching.pythonanywhere.com</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>App de I Ching online + Blog </h2>
+              <p>
+                Este es mi primer proyecto. Lo comencé a desarrollar en el inicio de mi camino como desarrolladora. I Ching Libre fue siendo escalado desde una simple consola de Python, a una app de escritorio, hasta lo que es ahora: una web app online. 
+                
+              </p>
+              <p>
+                Sigue en desarrollo y está indexado en Google. Aun no tiene dominio. El siguiente objetivo del proyecto es crear una API para consumirlo como app móvil.                 
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  {% endblock %}
